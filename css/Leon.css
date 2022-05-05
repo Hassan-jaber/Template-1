@@ -6,3 +6,120 @@
 body{
     font-family: "Work Sans" , "sans-serif";
 }
+header{
+    padding: 20px;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+header .logo{
+    height: 30px;
+    width: 30x;
+}
+.links{
+    position: relative;
+}
+.icon{
+    display: flex;
+    flex-wrap: wrap;
+    width: 30px;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+.icon span{
+    height:2px;
+    margin-bottom: 5px;
+    background-color: black;
+}
+.icon span:first-child{
+    width: 100%;
+    background-color: black;
+}
+.icon span:nth-child(2){
+    width: 60%;
+    transition: 0.3s;
+}
+.icon span:last-child{
+    width: 100%;
+}
+header .links:hover .icon span:nth-child(2){
+    width: 100%;
+}
+header .links ul{
+    list-style: none;
+    background-color: #f6f6f6;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    right: 0;
+    min-width: 200px;
+    top: calc(100% + 15px);
+    display: none;
+}
+header .links ul::before{
+    content: "";
+    border-color: transparent transparent #f6f6f6 transparent;
+    border-width: 10px;
+    position: absolute;
+    border-style: solid;
+    top: -20px;
+    right: 5px;
+}
+header .links:hover ul{
+    display: block;
+}
+header .links ul li:not(:last-child) a{
+    border-bottom: 1px solid #ddd;
+}
+header .links ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    color: #333;
+    transition: 0.3s;
+}
+header .links ul li a:hover{
+    padding-left: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Small */
+@media (min-width:768px) {
+    .container{
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width:992px) {
+    .container{
+        width: 970px;
+    }
+}
+/* Large  */
+@media (min-width:1200px) {
+    .container{
+        width: 1170px;
+    }
+}
