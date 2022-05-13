@@ -240,6 +240,32 @@ padding-bottom: 60px;
   .services .services-content .image img {
     width: 260px;
   }
+  .portfolio .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 100px;
+    margin-top: 100px;
+  }
+ .btn-container{
+     display: flex;
+     justify-content: center;
+     /* align-items: center; */
+ }
+  .btn-show-more{
+      width: 200px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px slategray solid;
+      text-align: center;
+      margin-bottom: 100px;
+      font-weight: 800;
+  }
+  .btn-show-more:hover{
+    border: 3px var(--min-color) solid;
+    cursor: pointer;
+  }
   @media (max-width: 1199px) {
     .image-column {
       display: none;
