@@ -266,6 +266,63 @@ padding-bottom: 60px;
     border: 3px var(--min-color) solid;
     cursor: pointer;
   }
+  .about-grid{
+      margin-top: 100px;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+  }
+  .line{
+      width: 60%;
+      border: 2px var(--min-color) solid ;
+  }
+  .p-one{
+      font-weight: bold;
+  }
+  .p-one,.p-two{
+      word-spacing: 7px;
+      line-height: 1.5rem;
+  }
+
+
+.img-2{
+    width: 300px;
+    height: 300px;
+    background-image: url(../images/flower1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    margin-bottom: 100px;
+}
+.img-2::after{
+content: "";
+height:60%;
+border: 40px var(--min-color) solid;
+position: absolute;
+right: 60px;
+top: -20px;
+z-index: -1;
+}
+.img-2::before{
+content: "";
+border: 40px var(--min-color) solid;
+position: absolute;
+right: 10px;
+bottom: 60px;
+z-index: -1;
+}
+
+@media (max-width: 1199px) {
+    .img-2 {
+      display: none;
+    }
+    .about-grid{
+        margin-top: 10px;
+     display: block;
+     padding-left: 5px;   
+    }
+  }
+
+
   @media (max-width: 1199px) {
     .image-column {
       display: none;
