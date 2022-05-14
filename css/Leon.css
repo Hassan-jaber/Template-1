@@ -365,9 +365,17 @@ z-index: -1;
     margin-top: 20px;
     font-size: 16px;
 }
+@media (max-width: 1199px) {
+    .label{
+        font-size: 30px;
+    }
+}
   @media (max-width: 1199px) {
     .image-column {
       display: none;
+    }
+    .link{
+        font-size: 28px;
     }
   }
 /* Small */
